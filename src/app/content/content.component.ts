@@ -18,7 +18,7 @@ export class ContentComponent {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer '+ api_token
+      Authorization: 'Bearer{api_token}' 
     }
   };
  

@@ -1,5 +1,6 @@
 <div class="content">
   <mat-card *ngFor="let card of listOfMovies.results" class="card">
       <img loading="lazy" mat-card-image src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
+      <div class="bubble">{{ card.vote_average }}</div>
   </mat-card>
 </div>
