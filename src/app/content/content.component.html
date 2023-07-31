@@ -1,10 +1,5 @@
 <div class="content">
-  <mat-card  *ngFor="let card of listOfMovies.results" class="card">
-      <mat-card-header>
-        
-        <mat-card-title>{{ card.title }}</mat-card-title>
-        <mat-card-subtitle>im Original: {{ card.original_title }}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}" alt="Photo of a Shiba Inu">
+  <mat-card *ngFor="let card of listOfMovies.results" class="card">
+      <img loading="lazy" mat-card-image src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
   </mat-card>
 </div>
