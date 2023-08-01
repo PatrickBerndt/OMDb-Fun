@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DetailViewService } from './detail-view.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'OMDb';
+  
+  constructor(public detailData: DetailViewService){}
+
+  
+  
+  
+  title = 'MovieDb';
 }

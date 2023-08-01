@@ -1,2 +1,3 @@
 <app-search-bar></app-search-bar>
-<app-content></app-content>
+<app-content [ngClass]="(this.detailData.detailData != '') ? 'hide' : 'show' "></app-content>
+<app-detail-view [ngClass]="(this.detailData.detailData == '') ? 'hide' : 'show' "></app-detail-view>

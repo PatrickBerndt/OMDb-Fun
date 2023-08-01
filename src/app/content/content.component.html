@@ -1,6 +1,6 @@
-<div class="content">
-  <mat-card *ngFor="let card of listOfMovies.results" class="card">
-      <img loading="lazy" mat-card-image src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
-      <div class="bubble">{{ card.vote_average }}</div>
+<div *ngIf="listOfMovies != undefined"  class="content">
+  <mat-card  *ngFor="let card of listOfMovies.results" class="card">
+      <img loading="lazy" (click)="toggleDetail(card.id)" mat-card-image src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
+      <div class="bubble">{{ card.vote_average.toFixed(1) }}</div>
   </mat-card>
 </div>

@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
+import { DetailViewComponent } from './detail-view/detail-view.component';
 
 
 
@@ -17,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
     AppComponent,
     SearchBarComponent,
     ContentComponent,
+    DetailViewComponent,
     
   ],
   imports: [
