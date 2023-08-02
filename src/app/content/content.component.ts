@@ -28,7 +28,7 @@ export class ContentComponent {
  
 
   async getInfo(){
-    await fetch('https://api.themoviedb.org/3/movie/popular?language=de', this.options)
+    await fetch('https://api.themoviedb.org/3/movie/now_playing?language=de&region=de', this.options)
     .then(response => response.json())
     .then(response => this.listOfMovies = response)
     .catch(err => console.error(err));

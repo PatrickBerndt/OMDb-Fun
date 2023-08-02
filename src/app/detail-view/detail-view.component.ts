@@ -11,5 +11,7 @@ export class DetailViewComponent{
   constructor(public detailData: DetailViewService){
     
   }
-  
+  back(){
+    this.detailData.detailData = '';
+  }
 }

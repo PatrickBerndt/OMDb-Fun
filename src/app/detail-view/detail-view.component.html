@@ -3,8 +3,15 @@
        <img src="https://image.tmdb.org/t/p/w500{{detailData.movieData.poster_path}}">
         <div>
             <h1>{{detailData.movieData.title}}</h1>
+            <div class="infoLine">
+                <span>Release Date: {{detailData.movieData.release_date}}</span><br>
+                <span>Genre: </span>
+                <span class="genreTag" *ngFor="let tag of detailData.movieData.genres">{{tag.name}}</span>
+            </div>
             <div>
-
+                <span><b>Handlung</b></span>
+                <span class="textBox">{{detailData.movieData.overview}}</span>
+                <button (click)="back()">zurück</button>
             </div>
         </div> 
     </div>
