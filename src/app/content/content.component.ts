@@ -10,10 +10,12 @@ import { environment } from '../environment';
 export class ContentComponent {
 
   listOfMovies: any;
+  listOfTvShows: any;
   
 
   constructor(private detailData: DetailViewService){
     this.getInfo();
+    this.getInfoTv();
   }
   
   api_token:string = environment.apiToken;
@@ -28,9 +30,16 @@ export class ContentComponent {
  
 
   async getInfo(){
-    await fetch('https://api.themoviedb.org/3/movie/now_playing?language=de&region=de', this.options)
+    await fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=de-DE&page=1&region=de&sort_by=popularity.desc', this.options)
     .then(response => response.json())
     .then(response => this.listOfMovies = response)
+    .catch(err => console.error(err));
+  }
+
+  async getInfoTv(){
+    await fetch('https://api.themoviedb.org/3/trending/tv/week?language=de-DE', this.options)
+    .then(response => response.json())
+    .then(response => this.listOfTvShows = response)
     .catch(err => console.error(err));
   }
   
@@ -42,7 +51,7 @@ export class ContentComponent {
   }
 
   async getDetailData(id:any){
-    await fetch(`https://api.themoviedb.org/3/movie/${id}?language=de`, this.options)
+    await fetch(`https://api.themoviedb.org/3/movie/${id}?language=de-DE`, this.options)
     .then(response => response.json())
     .then(response => this.detailData.movieData = response)
     .catch(err => console.error(err));
