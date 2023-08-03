@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import { DetailViewComponent } from './detail-view/detail-view.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { ShowListComponent } from './show-list/show-list.component';
+import { UpcommingComponent } from './upcomming/upcomming.component';
 
 
 
@@ -23,6 +24,7 @@ import { ShowListComponent } from './show-list/show-list.component';
     DetailViewComponent,
     MovieListComponent,
     ShowListComponent,
+    UpcommingComponent,
     
   ],
   imports: [
