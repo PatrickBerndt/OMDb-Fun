@@ -11,12 +11,12 @@
             <div>
                 <span><b>Handlung</b></span>
                 <span class="textBox">{{detailData.movieData.overview}}</span>
-                <button (click)="back()">zurück</button>
+                <button (click)="back()">Zurück</button>
             </div>
         </div> 
     </div>
-    
 </div>
+
 <div *ngIf="(detailData.showData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.showData.backdrop_path}});background-size: cover;">
     <div class="backgroundBox">
        <img loading="lazy" src="https://image.tmdb.org/t/p/w500{{detailData.showData.poster_path}}">
@@ -30,7 +30,7 @@
             <div>
                 <span><b>Handlung</b></span>
                 <span class="textBox">{{detailData.showData.overview}}</span>
-                <button (click)="back()">zurück</button>
+                <button (click)="back()">Zurück</button>
             </div>
         </div> 
     </div>

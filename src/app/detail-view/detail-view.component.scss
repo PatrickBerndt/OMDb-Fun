@@ -10,13 +10,25 @@
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
     color: white;
+    gap: 20px;
     img{
         height: 450px;
         border-radius: 15px;
         border: 2px solid white;
         margin-left: 10% ;
         margin-right: 2%;
-
+    }
+    button{
+        background-color: transparent;
+        color: white;
+        height: 30px;
+        width: 80px;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+    span{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 .textBox{
@@ -26,6 +38,9 @@
 }
 .genreTag{
     margin-right: 15px;
+}
+.gap{
+    gap: 20px;
 }
 @media(max-width:800px){
     .backgroundBox{
