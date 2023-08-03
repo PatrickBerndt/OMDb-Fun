@@ -1,5 +1,5 @@
-<div *ngIf="listOfUpcoming != undefined"  class="content">
-    <div  *ngFor="let card of listOfUpcoming.results" class="card">
+<div *ngIf="data.listOfUpcoming != undefined"  class="content">
+    <div  *ngFor="let card of data.listOfUpcoming.results" class="card">
         <img loading="lazy" (click)="toggleDetail(card.id)" src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
         <h3>{{card.title}}</h3>
         <h4>Start: {{detailData.formatDate(card.release_date)}}</h4>
