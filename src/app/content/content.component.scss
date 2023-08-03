@@ -3,53 +3,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    width: 100%;
-}
-.card{
-    width: 170px;
-    height:350px;
-    border-radius: 15px;
-    position: relative;
-    background-color: transparent;
-    color: white;
-    img{
-        width: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-        cursor: pointer;
-    }
-    h3{
-        font-size: 16px;
+    h2{
+        color: white;
         font-weight: 500;
+        margin-bottom: 0;
+        align-self: flex-start;
     }
-    h4{
-        font-size: 14px;
-        font-weight: 300;
-        margin-top: 0;
-    }
+}
+.movieContent{
+    height: 400px;
+    width: 100%;
+    overflow-x: scroll;
     
 }
-.bubble{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 13px;
-    font-weight: 500;
-    bottom: 80px;
-    right: 10px;
-    border: 1px solid white;
-    background-color: rgb(34, 34, 34);
+@media(max-width:800px){
+    .wrapper{
+        margin: 0 20px;
+    }
 }

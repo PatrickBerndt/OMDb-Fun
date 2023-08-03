@@ -1,0 +1,8 @@
+<div *ngIf="listOfTvShows != undefined"  class="content">
+    <div  *ngFor="let card of listOfTvShows.results" class="card">
+        <img loading="lazy" (click)="toggleDetail(card.id)" src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
+        <h3>{{card.name}}</h3>
+        <h4>Erschienen: {{detailData.formatDate(card.first_air_date)}}</h4>
+        <div class="bubble">{{ card.vote_average.toFixed(1) }}</div>
+    </div>
+  </div>

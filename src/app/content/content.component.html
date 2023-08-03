@@ -3,26 +3,11 @@
   <div class="wellcome">
 
   </div>
-  <div class="movieContent">
-    <div *ngIf="listOfMovies != undefined"  class="content">
-      <div  *ngFor="let card of listOfMovies.results" class="card">
-          <img loading="lazy" (click)="toggleDetail(card.id)" src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
-          <h3>{{card.title}}</h3>
-          <h4>{{card.release_date}}</h4>
-          <div class="bubble">{{ card.vote_average.toFixed(1) }}</div>
-      </div>
-    </div>
-  </div>
-  <div class="tvContent">
-    <div *ngIf="listOfTvShows != undefined"  class="content">
-      <div  *ngFor="let card of listOfTvShows.results" class="card">
-          <img loading="lazy" (click)="toggleDetail(card.id)" src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
-          <h3>{{card.title}}</h3>
-          <h4>{{card.release_date}}</h4>
-          <div class="bubble">{{ card.vote_average.toFixed(1) }}</div>
-      </div>
-    </div>
-  </div>
+  <h2> Angesagte Filme </h2>
+  <app-movie-list class="movieContent"></app-movie-list>
+  <h2> Angesagte Serien </h2>
+  <app-show-list class="movieContent"></app-show-list>
+ 
 
   
 </div>

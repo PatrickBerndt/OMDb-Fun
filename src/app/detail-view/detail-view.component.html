@@ -1,16 +1,35 @@
-<div *ngIf="(detailData.movieData != '')" class="detailBox" style="background-image: url(https://image.tmdb.org/t/p/w500{{detailData.movieData.backdrop_path}});background-size: cover;">
+<div *ngIf="(detailData.movieData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.movieData.backdrop_path}});background-size: cover;">
     <div class="backgroundBox">
-       <img src="https://image.tmdb.org/t/p/w500{{detailData.movieData.poster_path}}">
+       <img loading="lazy" src="https://image.tmdb.org/t/p/w500{{detailData.movieData.poster_path}}">
         <div>
             <h1>{{detailData.movieData.title}}</h1>
             <div class="infoLine">
-                <span>Release Date: {{detailData.movieData.release_date}}</span><br>
+                <span>Release Date: {{detailData.formatDate(detailData.movieData.release_date)}}</span><br>
                 <span>Genre: </span>
                 <span class="genreTag" *ngFor="let tag of detailData.movieData.genres">{{tag.name}}</span>
             </div>
             <div>
                 <span><b>Handlung</b></span>
                 <span class="textBox">{{detailData.movieData.overview}}</span>
+                <button (click)="back()">zurück</button>
+            </div>
+        </div> 
+    </div>
+    
+</div>
+<div *ngIf="(detailData.showData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.showData.backdrop_path}});background-size: cover;">
+    <div class="backgroundBox">
+       <img loading="lazy" src="https://image.tmdb.org/t/p/w500{{detailData.showData.poster_path}}">
+        <div>
+            <h1>{{detailData.showData.title}}</h1>
+            <div class="infoLine">
+                <span>Release Date: {{detailData.formatDate(detailData.showData.first_air_date)}}</span><br>
+                <span>Genre: </span>
+                <span class="genreTag" *ngFor="let tag of detailData.showData.genres">{{tag.name}}</span>
+            </div>
+            <div>
+                <span><b>Handlung</b></span>
+                <span class="textBox">{{detailData.showData.overview}}</span>
                 <button (click)="back()">zurück</button>
             </div>
         </div> 

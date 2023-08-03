@@ -27,3 +27,15 @@
 .genreTag{
     margin-right: 15px;
 }
+@media(max-width:800px){
+    .backgroundBox{
+        flex-direction: column;
+        padding-left: 20px;
+        img{
+            margin-left: -20px ;
+            margin-right:  unset;
+            
+        }
+    }
+    
+}

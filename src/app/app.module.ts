@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
 import { DetailViewComponent } from './detail-view/detail-view.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { ShowListComponent } from './show-list/show-list.component';
 
 
 
@@ -19,6 +21,8 @@ import { DetailViewComponent } from './detail-view/detail-view.component';
     SearchBarComponent,
     ContentComponent,
     DetailViewComponent,
+    MovieListComponent,
+    ShowListComponent,
     
   ],
   imports: [

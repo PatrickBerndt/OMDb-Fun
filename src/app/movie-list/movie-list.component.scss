@@ -1,0 +1,47 @@
+.content{
+    display: flex;
+   
+    align-items: center;   
+    gap: 30px;
+    margin-top: 20px;
+}
+.card{
+    width: 170px;
+    height:350px;
+    border-radius: 15px;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    img{
+        width: 170px;
+        object-fit: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    h4{
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 0;
+    }
+    
+}
+.bubble{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    bottom: 80px;
+    right: 10px;
+    border: 1px solid white;
+    background-color: rgb(34, 34, 34);
+}
