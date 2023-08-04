@@ -7,6 +7,9 @@ export class DetailViewService {
   detailData:any = '';
   movieData:any = '';
   showData:any = '';
+  movieCreditData:any = '';
+  showCreditData:any = '';
+
   constructor() { }
 
   formatDate(data:string){

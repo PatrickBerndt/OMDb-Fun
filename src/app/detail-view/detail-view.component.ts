@@ -13,7 +13,9 @@ export class DetailViewComponent{
   }
   back(){
     this.detailData.movieData = '';
+    this.detailData.movieCreditData = '';
     this.detailData.showData = '';
+    this.detailData.showCreditData = '';
     this.detailData.detailData = '';
 
   }

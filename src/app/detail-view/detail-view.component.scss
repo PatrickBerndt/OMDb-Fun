@@ -42,6 +42,31 @@
 .gap{
     gap: 20px;
 }
+.actors{
+    margin: 20px 10%;
+    height: 440px;
+    h3{
+        color: white;
+    }
+    .scroll{
+        overflow-x: scroll;
+        display: flex;
+        align-items: center;   
+        gap: 30px;
+        margin-top: 20px;
+        
+        .castCard{
+            width: 150px;
+            height: 300px;
+            border-radius: 7px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+
 @media(max-width:800px){
     .backgroundBox{
         flex-direction: column;

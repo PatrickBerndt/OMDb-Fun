@@ -33,19 +33,21 @@ $OMDb-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($OMDb-theme);
 
-body{
-    margin: 0;
-    background-color: rgb(29, 29, 29);
-    font-family: sans-serif;
+
+
+html, body {
+  height: 100%; 
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(29, 29, 29);
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-
+  width: 6px;
+  height: 6px;
 }
  
 ::-webkit-scrollbar-track {
@@ -55,5 +57,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
-  border-radius: 5px;
+  border-radius: 3px;
+  
 }
