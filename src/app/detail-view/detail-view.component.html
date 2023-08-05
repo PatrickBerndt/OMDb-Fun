@@ -19,12 +19,13 @@
     <div class="actors" *ngIf="detailData.movieCreditData != ''">
         <h3>Hauptdarsteller</h3>
         <div class="scroll">
-            <mat-card class="castCard"  *ngFor="let card of detailData.movieCreditData.cast.slice(0,10)"  >
-                <img mat-card-image src="https://image.tmdb.org/t/p/w500{{card.profile_path}}">
-                <mat-card-title>{{card.name}}</mat-card-title>
-                <mat-card-subtitle>{{card.character}}</mat-card-subtitle>
-                
-              </mat-card>
+            <div *ngFor="let card of detailData.movieCreditData.cast.slice(0,10)">
+                <mat-card class="castCard" *ngIf="card.profile_path != undefined"   >
+                    <img mat-card-image src="https://image.tmdb.org/t/p/w500{{card.profile_path}}">
+                    <mat-card-title>{{card.name}}</mat-card-title>
+                    <mat-card-subtitle>{{card.character}}</mat-card-subtitle>
+                </mat-card>
+            </div>
         </div>
     </div>
 </div>
@@ -49,12 +50,13 @@
     <div class="actors" *ngIf="detailData.showCreditData != ''">
         <h3>Hauptdarsteller</h3>
         <div class="scroll">
-            <mat-card class="castCard"  *ngFor="let card of detailData.showCreditData.cast.slice(0,10)"  >
-                <img mat-card-image src="https://image.tmdb.org/t/p/w500{{card.profile_path}}">
-                <mat-card-title>{{card.name}}</mat-card-title>
-                <mat-card-subtitle>{{card.character}}</mat-card-subtitle>
-                
-              </mat-card>
+            <div *ngFor="let card of detailData.showCreditData.cast.slice(0,10)">
+                <mat-card class="castCard" *ngIf="card.profile_path != undefined"   >
+                    <img mat-card-image src="https://image.tmdb.org/t/p/w500{{card.profile_path}}">
+                    <mat-card-title>{{card.name}}</mat-card-title>
+                    <mat-card-subtitle>{{card.character}}</mat-card-subtitle>
+                </mat-card>
+            </div>
         </div>
     </div>
     
