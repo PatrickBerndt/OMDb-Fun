@@ -13,6 +13,8 @@ import { DetailViewComponent } from './detail-view/detail-view.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { ShowListComponent } from './show-list/show-list.component';
 import { UpcommingComponent } from './upcomming/upcomming.component';
+import { WellcomeComponent } from './wellcome/wellcome.component';
+import { SearchDetailComponent } from './search-detail/search-detail.component';
 
 
 
@@ -25,6 +27,8 @@ import { UpcommingComponent } from './upcomming/upcomming.component';
     MovieListComponent,
     ShowListComponent,
     UpcommingComponent,
+    WellcomeComponent,
+    SearchDetailComponent,
     
   ],
   imports: [

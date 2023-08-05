@@ -1,0 +1,9 @@
+<button class="backButton" (click)="backToSearch()">Zurück</button>
+<div *ngIf="detailData.searchData != undefined"  class="content">
+    <div  *ngFor="let card of detailData.searchData.results" class="card">
+        <img loading="lazy" (click)="toggleDetail(card.id)" src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
+        <h3>{{card.title}}</h3>
+        <h4>Erschienen: {{detailData.formatDate(card.release_date)}}</h4>
+        <div class="bubble">{{ card.vote_average.toFixed(1) }}</div>
+    </div>
+</div>

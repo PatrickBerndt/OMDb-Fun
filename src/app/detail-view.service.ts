@@ -9,6 +9,8 @@ export class DetailViewService {
   showData:any = '';
   movieCreditData:any = '';
   showCreditData:any = '';
+  searchData:any = '';
+  section: string = '0';
 
   constructor() { }
 

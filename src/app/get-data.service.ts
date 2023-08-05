@@ -46,6 +46,8 @@ export class GetDataService {
       this.detailData.movieCreditData = response;
     }else if(toList == 'showCredit'){
       this.detailData.showCreditData = response;
+    }else if(toList == 'searchData'){
+      this.detailData.searchData = response;
     }
   }
 }

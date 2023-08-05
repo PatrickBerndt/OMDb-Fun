@@ -11,7 +11,8 @@
             <div>
                 <span><b>Handlung</b></span>
                 <span class="textBox">{{detailData.movieData.overview}}</span>
-                <button (click)="back()">Zurück</button>
+                <button *ngIf="detailData.searchData != ''" (click)="backToSearch()">Zurück</button>
+                <button *ngIf="detailData.searchData == ''" (click)="back()">Zurück</button>
             </div>
         </div> 
     </div>

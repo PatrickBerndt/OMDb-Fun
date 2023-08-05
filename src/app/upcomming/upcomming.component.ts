@@ -17,6 +17,7 @@ export class UpcommingComponent {
   toggleDetail(id:number){
     this.detailData.detailData = id;
     this.data.getInfo(`https://api.themoviedb.org/3/movie/${id}?language=de-DE`, 'movieDetail');
+    this.detailData.section = '1';
   }
   
 }

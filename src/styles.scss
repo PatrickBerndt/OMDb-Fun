@@ -44,6 +44,14 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(29, 29, 29);
 }
+input{
+  font-family:inherit;
+  padding-left: 15px;
+    
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family:inherit;
+}
 
 ::-webkit-scrollbar {
   width: 6px;

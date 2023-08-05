@@ -17,6 +17,9 @@ export class DetailViewComponent{
     this.detailData.showData = '';
     this.detailData.showCreditData = '';
     this.detailData.detailData = '';
-
+    this.detailData.section = '0';
+  }
+  backToSearch(){
+    this.detailData.section = '2';
   }
 }

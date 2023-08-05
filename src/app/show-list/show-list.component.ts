@@ -18,6 +18,7 @@ export class ShowListComponent {
     this.detailData.detailData = id;
     this.data.getInfo(`https://api.themoviedb.org/3/tv/${id}?language=de-DE`, 'showDetail');
     this.data.getInfo(`https://api.themoviedb.org/3/tv/${id}/credits?language=de`, 'showCredit');
+    this.detailData.section = '1';
   }
 
 }
