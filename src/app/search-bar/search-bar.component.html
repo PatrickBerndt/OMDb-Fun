@@ -1,10 +1,17 @@
-<mat-toolbar class="gradient" >
+<div id="burgerbutton" class="popout">
+  <span *ngIf="this.detailData.section == '0'" class="link" (click)="scrollToTarget('popular'); toggleMenu()" >Angesagte Filme</span>
+  <span *ngIf="this.detailData.section == '0'" class="link" (click)="scrollToTarget('upcoming'); toggleMenu()" >Coming soon</span>
+  <span *ngIf="this.detailData.section == '0'" class="link" (click)="scrollToTarget('popularTv'); toggleMenu()" >Angesagte Serien</span>
+  <span *ngIf="this.detailData.section != '0'" class="link" (click)="back(); toggleMenu()" >Home</span>
+</div>
+<mat-toolbar class="gradient index" >
   
   <span class="logo" (click)="back()">MovieDb</span>
   <span class="example-spacer"></span>
   
-  <span class="link" (click)="scrollToTarget('popular')" >Angesagte Filme</span>
-  <span class="link" (click)="scrollToTarget('upcoming')" >Coming soon</span>
-  <span class="link" (click)="scrollToTarget('popularTv')" >Angesagte Serien</span>
+  <span class="link hide-mobile" (click)="scrollToTarget('popular')" >Angesagte Filme</span>
+  <span class="link hide-mobile" (click)="scrollToTarget('upcoming')" >Coming soon</span>
+  <span class="link hide-mobile" (click)="scrollToTarget('popularTv')" >Angesagte Serien</span>
+  <img  class="link show-mobile" (click)="toggleMenu()" src="https://api.iconify.design/simple-line-icons:menu.svg?color=%23ffffff">
   
 </mat-toolbar>

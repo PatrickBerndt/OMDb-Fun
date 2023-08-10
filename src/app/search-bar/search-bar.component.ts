@@ -17,6 +17,7 @@ export class SearchBarComponent {
   scrollToTarget(target: string) {
     this.scroller.scrollToAnchor(target);
   }
+  
   back(){
     this.detailData.movieData = '';
     this.detailData.movieCreditData = '';
@@ -24,5 +25,10 @@ export class SearchBarComponent {
     this.detailData.showCreditData = '';
     this.detailData.detailData = '';
     this.detailData.section = '0';
+  }
+
+  toggleMenu(){
+    let button:any = document.getElementById('burgerbutton')
+    button.classList.toggle('show-menu');
   }
 }

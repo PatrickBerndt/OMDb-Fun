@@ -13,13 +13,20 @@
 .movieContent{
     height: 400px;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: scroll;    
 }
 .wellcomeContent{
     height: 400px;
     width: 100%;
     
 }
+.target-element{
+    padding-top: 80px;
+}
+
+   
+    
+
 @media(max-width:850px){
     .wrapper{
         margin: 0 20px;

@@ -1,4 +1,5 @@
 <div *ngIf="data.listOfMovies != undefined"  class="content">
+    
     <div  *ngFor="let card of data.listOfMovies.results" class="card">
         <img loading="lazy" (click)="toggleDetail(card.id)" src= "https://image.tmdb.org/t/p/w500{{card.poster_path}}">
         <h3>{{card.title}}</h3>
