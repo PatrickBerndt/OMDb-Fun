@@ -9,9 +9,10 @@
   <span class="logo" (click)="back()">MovieDb</span>
   <span class="example-spacer"></span>
   
-  <span class="link hide-mobile" (click)="scrollToTarget('popular')" >Angesagte Filme</span>
-  <span class="link hide-mobile" (click)="scrollToTarget('upcoming')" >Coming soon</span>
-  <span class="link hide-mobile" (click)="scrollToTarget('popularTv')" >Angesagte Serien</span>
+  <span *ngIf="this.detailData.section == '0'" class="link hide-mobile" (click)="scrollToTarget('popular')" >Angesagte Filme</span>
+  <span *ngIf="this.detailData.section == '0'" class="link hide-mobile" (click)="scrollToTarget('upcoming')" >Coming soon</span>
+  <span *ngIf="this.detailData.section == '0'" class="link hide-mobile" (click)="scrollToTarget('popularTv')" >Angesagte Serien</span>
+  <span *ngIf="this.detailData.section != '0'" class="link hide-mobile" (click)="back(); toggleMenu()" >Home</span>
   <img  class="link show-mobile" (click)="toggleMenu()" src="https://api.iconify.design/simple-line-icons:menu.svg?color=%23ffffff">
   
 </mat-toolbar>
