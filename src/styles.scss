@@ -47,7 +47,10 @@ body {
 input{
   font-family:inherit;
   padding-left: 15px;
-    
+  
+}
+input:focus{
+    outline: none;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family:inherit;
