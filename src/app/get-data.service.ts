@@ -13,6 +13,8 @@ export class GetDataService {
   listOfMovies: any;
   listOfShows: any;
 
+  impressumOpen: boolean = false;
+
 
   api_token:string = environment.apiToken;
 

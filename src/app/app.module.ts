@@ -15,6 +15,7 @@ import { ShowListComponent } from './show-list/show-list.component';
 import { UpcommingComponent } from './upcomming/upcomming.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
 import { SearchDetailComponent } from './search-detail/search-detail.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -29,6 +30,7 @@ import { SearchDetailComponent } from './search-detail/search-detail.component';
     UpcommingComponent,
     WellcomeComponent,
     SearchDetailComponent,
+    FooterComponent,
     
   ],
   imports: [

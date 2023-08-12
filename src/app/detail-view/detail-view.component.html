@@ -1,4 +1,4 @@
-<div *ngIf="(detailData.movieData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.movieData.backdrop_path}});background-size: cover;">
+<div *ngIf="(detailData.movieData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.movieData.backdrop_path}}); background-size: 100% 700px;background-repeat: no-repeat;">
     <div class="backgroundBox">
        <img loading="lazy" src="https://image.tmdb.org/t/p/w500{{detailData.movieData.poster_path}}">
         <div>
@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<div *ngIf="(detailData.showData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.showData.backdrop_path}});background-size: cover;">
+<div *ngIf="(detailData.showData != '')" class="detailBox" style=" background-image: url(https://image.tmdb.org/t/p/w500{{detailData.showData.backdrop_path}}); background-size: 100% 700px;background-repeat: no-repeat;">
     <div class="backgroundBox">
        <img loading="lazy" src="https://image.tmdb.org/t/p/w500{{detailData.showData.poster_path}}">
         <div>

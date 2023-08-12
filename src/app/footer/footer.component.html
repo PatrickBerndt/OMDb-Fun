@@ -1,0 +1,21 @@
+<div class="footer">
+    <h3>MovieDb</h3>
+    <h4 (click)="toggleImpressum()">Impressum</h4>
+</div>
+<div *ngIf="this.data.impressumOpen" class="impressum">
+    <div class="text">
+        <img (click)="toggleImpressum()" src="https://api.iconify.design/ci:close-lg.svg">
+        <h1>Impressum</h1>
+
+        <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+        <p>Patrick Berndt<br />
+        Worthstr. 31<br />
+        58511 L&uuml;denscheid</p>
+
+        <h2>Kontakt</h2>
+        <p>Telefon: 017647513958<br />
+        E-Mail: kontakt@patrickberndt.de</p>
+
+        <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+    </div>
+</div>
